@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Uns - Tozzi Gelati Zürich</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-3">
+                    <a href="index.html" class="text-2xl font-black tracking-tight text-amber-900 flex items-center gap-2">
+                        <i class="fa-solid fa-ice-cream text-amber-600"></i> TOZZI GELATI
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+                    <a href="index.html" class="text-stone-600 hover:text-amber-700 transition">Startseite</a>
+                    <a href="about.html" class="text-amber-700 font-semibold transition">Über Uns</a>
+                    <a href="services.html" class="text-stone-600 hover:text-amber-700 transition">Menü & Preise</a>
+                    <a href="gallery.html" class="text-stone-600 hover:text-amber-700 transition">Galerie</a>
+                    <a href="contacts.html" class="text-stone-600 hover:text-amber-700 transition">Kontakt</a>
+                    <a href="booking.html" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md transition transform hover:-translate-y-0.5">
+                        <i class="fa-regular fa-calendar-check mr-2"></i> Tisch reservieren
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-stone-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-stone-600">Startseite</a>
+            <a href="about.html" class="block py-2 text-amber-700 font-semibold">Über Uns</a>
+            <a href="services.html" class="block py-2 text-stone-600">Menü & Preise</a>
+            <a href="gallery.html" class="block py-2 text-stone-600">Galerie</a>
+            <a href="contacts.html" class="block py-2 text-stone-600">Kontakt</a>
+            <a href="booking.html" class="block text-center bg-amber-600 text-white py-2.5 rounded-xl font-semibold">Tisch reservieren</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-stone-900 text-white py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto space-y-4">
+            <h1 class="text-4xl sm:text-5xl font-black">Unsere Geschichte & Philosophie</h1>
+            <p class="text-stone-400 text-lg">Wie aus echter Leidenschaft für italienische Eiskunst eine Manufaktur in Zürich Oerlikon wurde.</p>
+        </div>
+    </header>
+
+    <!-- Story Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="bg-amber-100 text-amber-800 text-sm font-bold px-4 py-1.5 rounded-full">
+                    Handwerk aus Zürich
+                </span>
+                <h2 class="text-3xl font-black text-stone-900">Frisch, natürlich und ohne Kompromisse</h2>
+                <p class="text-stone-600 leading-relaxed">
+                    Tozzi Gelati steht für kompromisslose Qualität in der Gelato-Produktion. In unserer Manufaktur in der Franklinstrasse in Zürich kreieren wir handwerkliches Gelato und feinste Sorbets nach traditionellen Rezepturen.
+                </p>
+                <p class="text-stone-600 leading-relaxed">
+                    Wir verzichten konsequent auf künstliche Zusatzstoffe, Aromen oder Farbstoffe. Jede Sorte wird frisch angesetzt, um den unverfälschten, natürlichen Geschmack der sorgfältig ausgewählten Zutaten voll zur Geltung zu bringen.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div class="border-l-4 border-amber-600 pl-4">
+                        <p class="text-2xl font-black text-stone-900">100%</p>
+                        <p class="text-sm text-stone-500">Natürliche Zutaten</p>
+                    </div>
+                    <div class="border-l-4 border-amber-600 pl-4">
+                        <p class="text-2xl font-black text-stone-900">Zürich</p>
+                        <p class="text-sm text-stone-500">Lokal produziert</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=500&q=80" alt="Gelato Herstellung" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="Zutaten" class="rounded-2xl shadow-lg w-full h-64 object-cover mt-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-black text-stone-900">Unsere Werte</h2>
+                <p class="mt-4 text-stone-600">Was uns antreibt, Tag für Tag das perfekte Glace zu kreieren.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 text-center">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3">Rein & Natürlich</h3>
+                    <p class="text-stone-600 text-sm">Nur frische Milch, Rahm, ausgewählte Früchte und edle Rohstoffe finden den Weg in unsere Eismaschinen.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 text-center">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3">Handgemacht</h3>
+                    <p class="text-stone-600 text-sm">Jede Charge wird von Hand angesetzt und mit Liebe zum Detail in Oerlikon gerührt.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 text-center">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3">Verurzelt in Zürich</h3>
+                    <p class="text-stone-600 text-sm">Stolz in Oerlikon zuhause – als Treffpunkt für alle Geniesser und Eisfans der Limmatstadt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="text-xl font-black text-white mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-ice-cream text-amber-500"></i> TOZZI GELATI
+                </div>
+                <p class="text-sm">Handwerkliche Gelato-Produktion in Zürich Oerlikon.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Kontakt</h4>
+                <p class="text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-amber-500"></i> Franklinstrasse 7, 8050 Zürich</p>
+                <p class="text-sm mb-2"><i class="fa-solid fa-phone mr-2 text-amber-500"></i> +41 79 292 94 26</p>
+                <p class="text-sm mb-2"><i class="fa-solid fa-envelope mr-2 text-amber-500"></i> info@tozzi-gelati.ch</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Social Media</h4>
+                <div class="flex space-x-4 mb-4">
+                    <a href="https://www.instagram.com/tozzi_gelati/" target="_blank" class="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center text-white hover:bg-amber-600 transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/tozzi.gelati/" target="_blank" class="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center text-white hover:bg-amber-600 transition">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <p class="text-xs text-stone-500">&copy; 2026 Tozzi Gelati GmbH.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
