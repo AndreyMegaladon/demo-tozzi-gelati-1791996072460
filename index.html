@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tozzi Gelati - Handwerkliches Gelato in Zürich Oerlikon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-3">
+                    <a href="index.html" class="text-2xl font-black tracking-tight text-amber-900 flex items-center gap-2">
+                        <i class="fa-solid fa-ice-cream text-amber-600"></i> TOZZI GELATI
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+                    <a href="index.html" class="text-amber-700 font-semibold transition">Startseite</a>
+                    <a href="about.html" class="text-stone-600 hover:text-amber-700 transition">Über Uns</a>
+                    <a href="services.html" class="text-stone-600 hover:text-amber-700 transition">Menü & Preise</a>
+                    <a href="gallery.html" class="text-stone-600 hover:text-amber-700 transition">Galerie</a>
+                    <a href="contacts.html" class="text-stone-600 hover:text-amber-700 transition">Kontakt</a>
+                    <a href="booking.html" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md transition transform hover:-translate-y-0.5">
+                        <i class="fa-regular fa-calendar-check mr-2"></i> Tisch reservieren
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-stone-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-amber-700 font-semibold">Startseite</a>
+            <a href="about.html" class="block py-2 text-stone-600">Über Uns</a>
+            <a href="services.html" class="block py-2 text-stone-600">Menü & Preise</a>
+            <a href="gallery.html" class="block py-2 text-stone-600">Galerie</a>
+            <a href="contacts.html" class="block py-2 text-stone-600">Kontakt</a>
+            <a href="booking.html" class="block text-center bg-amber-600 text-white py-2.5 rounded-xl font-semibold">Tisch reservieren</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-amber-50 via-orange-50 to-stone-100 text-stone-900 overflow-hidden px-4">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6 text-center md:text-left">
+                <span class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 text-sm font-bold px-4 py-1.5 rounded-full">
+                    <i class="fa-solid fa-location-dot"></i> Franklinstrasse 7, Zürich Oerlikon
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    Handgemachtes <span class="text-amber-600 underline decoration-amber-300">Gelato</span> aus Zürich
+                </h1>
+                <p class="text-lg text-stone-600">
+                    Erlebe pure Handwerkskunst: Frisches Gelato und feine Sorbets nach eigenen Rezepturen, ganz ohne künstliche Zusatzstoffe. Direkt in Oerlikon produziert!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="services.html" class="bg-stone-900 hover:bg-stone-800 text-white px-8 py-4 rounded-xl font-bold shadow-lg transition text-center">
+                        Menü entdecken
+                    </a>
+                    <a href="booking.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg transition text-center">
+                        Jetzt reservieren
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-square">
+                    <img src="https://images.unsplash.com/photo-1557142046-c705a3adf39e?auto=format&fit=crop&w=800&q=80" alt="Tozzi Gelati Zürich" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-stone-100 hidden sm:block">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 text-xl font-bold">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-stone-500">100% Natürliche Zutaten</p>
+                            <p class="font-bold text-stone-800">Traditionelle Rezepte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Gelato Highlights -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-black tracking-tight text-stone-900 sm:text-4xl">Beliebte Kreationen</h2>
+                <p class="mt-4 text-stone-600">Entdecke eine Auswahl unserer handgerührten Glace-Klassiker und saisonalen Sorbets.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-stone-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-stone-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80" alt="Pistazien Gelato" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">Pistacchio Vero</h3>
+                            <span class="text-amber-700 font-bold bg-amber-100 px-3 py-1 rounded-full text-sm">CHF 4.80</span>
+                        </div>
+                        <p class="text-stone-600 text-sm mb-4">Feinstes sizilianisches Pistazienmark, cremig gerührt nach traditioneller Manier.</p>
+                        <a href="services.html" class="text-amber-600 font-semibold text-sm hover:underline flex items-center gap-1">Mehr erfahren &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-stone-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-stone-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=600&q=80" alt="Cioccolato Fondente" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">Cioccolato Fondente</h3>
+                            <span class="text-amber-700 font-bold bg-amber-100 px-3 py-1 rounded-full text-sm">CHF 4.50</span>
+                        </div>
+                        <p class="text-stone-600 text-sm mb-4">Intensives dunkles Schokoladeneis aus edlem Kakao, laktosefrei und vollmundig.</p>
+                        <a href="services.html" class="text-amber-600 font-semibold text-sm hover:underline flex items-center gap-1">Mehr erfahren &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-stone-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-stone-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Frische Fruchtsorbets" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-stone-900">Lampone & Frutta</h3>
+                            <span class="text-amber-700 font-bold bg-amber-100 px-3 py-1 rounded-full text-sm">CHF 4.50</span>
+                        </div>
+                        <p class="text-stone-600 text-sm mb-4">Erfrischendes Himbeersorbet aus vollreifen, sonnigen Früchten. Vegan.</p>
+                        <a href="services.html" class="text-amber-600 font-semibold text-sm hover:underline flex items-center gap-1">Mehr erfahren &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-black tracking-tight text-stone-900 sm:text-4xl">Was unsere Gäste sagen</h2>
+                <p class="mt-4 text-stone-600">Echtes Feedback von Eisliebhabern aus Zürich und Umgebung.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
+                    <div class="flex text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-700 mb-6">"Das beste Gelato in ganz Oerlikon! Man schmeckt die natürlichen Zutaten und die Liebe zum Handwerk sofort. Absolut empfehlenswert!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-amber-200 rounded-full flex items-center justify-center font-bold text-amber-800">M</div>
+                        <div>
+                            <p class="font-bold text-stone-900">Marco B.</p>
+                            <p class="text-xs text-stone-500">Zürich Oerlikon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
+                    <div class="flex text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-700 mb-6">"Unglaublich cremiges Pistazieneis und super freundlicher Service direkt an der Franklinstrasse. Wir kommen definitiv wieder!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-amber-200 rounded-full flex items-center justify-center font-bold text-amber-800">S</div>
+                        <div>
+                            <p class="font-bold text-stone-900">Sarah W.</p>
+                            <p class="text-xs text-stone-500">Zürich Schwamendingen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
+                    <div class="flex text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-700 mb-6">"Ein Geheimtipp für Eisliebhaber. Man merkt, dass hier ohne künstliche Zusätze gearbeitet wird. Top Qualität!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-amber-200 rounded-full flex items-center justify-center font-bold text-amber-800">L</div>
+                        <div>
+                            <p class="font-bold text-stone-900">Luca K.</p>
+                            <p class="text-xs text-stone-500">Zürich City</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-amber-600 text-white text-center px-4">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <h2 class="text-3xl sm:text-4xl font-black">Lust auf erstklassiges Gelato bekommen?</h2>
+            <p class="text-lg text-amber-100">Besuche uns in der Franklinstrasse 7 in Zürich oder reserviere direkt deinen Platz für ein Glace-Tasting.</p>
+            <div class="pt-4">
+                <a href="booking.html" class="bg-stone-900 hover:bg-stone-800 text-white px-8 py-4 rounded-xl font-bold shadow-lg transition inline-block">
+                    Jetzt Termin / Tisch anfragen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="text-xl font-black text-white mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-ice-cream text-amber-500"></i> TOZZI GELATI
+                </div>
+                <p class="text-sm">Handwerkliche Gelato-Produktion in Zürich Oerlikon. Frische, Qualität und italienische Leidenschaft.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Kontakt</h4>
+                <p class="text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-amber-500"></i> Franklinstrasse 7, 8050 Zürich</p>
+                <p class="text-sm mb-2"><i class="fa-solid fa-phone mr-2 text-amber-500"></i> +41 79 292 94 26</p>
+                <p class="text-sm mb-2"><i class="fa-solid fa-envelope mr-2 text-amber-500"></i> info@tozzi-gelati.ch</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Social Media</h4>
+                <div class="flex space-x-4 mb-4">
+                    <a href="https://www.instagram.com/tozzi_gelati/" target="_blank" class="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center text-white hover:bg-amber-600 transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/tozzi.gelati/" target="_blank" class="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center text-white hover:bg-amber-600 transition">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <p class="text-xs text-stone-500">&copy; 2026 Tozzi Gelati GmbH. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
